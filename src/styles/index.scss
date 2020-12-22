@@ -1,0 +1,28 @@
+
+
+.#{$css-prefix}{
+   
+  background: red;
+}
+body,html{
+  margin: 0 auto;
+  padding: 0;
+}
+$prefix:'svip';
+.#{$prefix} {
+
+  &-mobile{
+    display: none;
+  }
+}
+
+@media #{$mobile} {
+
+  .#{$prefix} {
+    
+    &-normal{
+      display: none;
+    }
+ 
+  }
+}
